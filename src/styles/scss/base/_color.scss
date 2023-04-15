@@ -1,0 +1,54 @@
+@use '../abstracts/variable' as var;
+// background
+// color
+.bwhite{
+    background-color: white !important;
+}
+.cwhite{
+    color: white !important;
+}
+.bblack{
+    background-color: black !important;
+}
+.cblack{
+    color: black !important;
+}
+.bpurple{
+    background-color: #8885FF
+}
+.cpurple{
+    color: #8885FF !important;
+}
+.byellow{
+    background-color: #F8B76B !important;
+}
+.cyellow{
+    color: #F8B76B !important;
+}
+.bred{
+    background-color: red !important;
+}
+.cred{
+    color: red !important;
+}
+
+// batas 
+
+.bnone{
+    background: none;
+}
+.cgrayText{
+    color: map-get(var.$c, 'gray1');
+}
+
+.binfo{
+    background-color: map-get(var.$c, 'info') !important;
+    color: #2F80ED !important;
+}
+
+.borderL0{
+    border-left: none !important;
+}
+.borderR0{
+    border-left: none !important;
+}

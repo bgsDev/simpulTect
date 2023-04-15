@@ -1,0 +1,43 @@
+@use '../abstracts/variable' as var;
+@use '../abstracts/mixins' as mix;
+
+.dnone{
+    display: none !important;
+}
+.dflex{
+    display: flex;
+}
+.mauto{
+    margin: auto;
+}
+.mnone{
+    margin: 0px !important;
+}
+.flexR{
+    @include mix.flexR;
+}
+.flexC{
+    @include mix.flexC;
+}
+.flexItemCenter{
+    @include mix.flexC;
+    justify-content: center;
+    align-items: center;
+}
+.flexSpaceBetween{
+    @include mix.flexR;
+    justify-content: space-between;
+}
+.posRelative{
+    @include mix.posRelative;
+}
+.w100p{
+    width: 100% !important;
+}
+.w80p{
+    width: 80% !important;
+}
+
+.fz20px{
+    font-size: 20px;
+}

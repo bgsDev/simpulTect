@@ -1,0 +1,72 @@
+@use './variable' as var;
+@mixin ovalBtn{
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: map-get(var.$p,'link');
+}
+//batas position => pos
+// @debug ('l': unset, 'r': unset, 't': unset, 'b': unset);
+// bottom : b
+// top : t
+// left : l 
+// right : r
+// tambah x jika permanent 
+@mixin posFixed($map){
+    // mix.posFixed(('l': unset, 'r': unset, 't': unset, 'b': unset));
+    position: fixed;
+    bottom: map-get($map, 'b');
+    right: map-get($map, 'r');
+    top: map-get($map, 't');
+    left: map-get($map, 'l');
+}
+@mixin posRelative{
+    position: relative;
+    display: inline-block;
+}
+@mixin posAbsolute($map){
+    // @include mix.posAbsolute(('l': unset, 'r': unset, 't': unset, 'b': unset));
+    position: absolute;
+    z-index: 1;
+    bottom: map-get($map, 'b');
+    right: map-get($map, 'r');
+    top: map-get($map, 't');
+    left: map-get($map, 'l');
+}
+@mixin flexC{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexCx{
+    display: flex !important;
+    flex-direction: column;
+}
+@mixin flexR{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin gridC($colom){
+    display: grid;
+    grid-template-columns: $colom;
+}
+@mixin gridR($row){
+    display: grid;
+    grid-template-rows: $row;
+}
+
+@mixin font($font-file) {
+    @font-face {
+      font-family:'Lato';
+      src: url('../font/'+$font-file+'.ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    font-family: "Lato", $font-file;
+}
+
+@mixin padmar0{
+    padding: 0px;
+    margin: 0px;
+}

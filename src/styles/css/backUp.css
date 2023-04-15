@@ -1,0 +1,556 @@
+.containerChat {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 80%;
+}
+
+.containerFormChat {
+  background-color: white;
+  padding: 10px 20px;
+  min-width: 400px;
+  border-radius: 10px;
+}
+
+.containerFormChat .form {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.containerBtnChat {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.containerBtnChat .active {
+  position: fixed;
+  right: 18px;
+}
+
+.containerBtnChat button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 16px 24px;
+  margin: 0px 2%;
+}
+
+.containerBtnChat span {
+  font-weight: bold;
+}
+
+button.primaryDark {
+  background-color: #4F4F4F;
+  margin-left: 20px;
+}
+
+button.primary {
+  background-color: #2F80ED;
+}
+
+.talgC {
+  text-align: center;
+}
+
+.alcSE {
+  align-self: end;
+}
+
+.listGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemGroup {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0px;
+}
+
+.itemGroup .icon {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.itemGroup .icon .active {
+  position: relative;
+  left: -18px;
+}
+
+.icon button {
+  width: 50px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.oneIcon {
+  width: 35px !important;
+}
+
+.itemGroup .msg {
+  margin-right: 10px;
+  max-width: 70%;
+  cursor: pointer;
+}
+
+.posisiOvalRed {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: end;
+  position: relative;
+  bottom: 25px;
+  right: 10px;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Lato", "Lato-Bold";
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title1 {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Lato", "Lato-Bold";
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title2 {
+  font-size: 12px;
+}
+
+.title3 {
+  font-size: 10px;
+}
+
+.ovalRed {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  align-self: end;
+}
+
+.containerFormListChar {
+  background-color: white;
+  min-width: 400px;
+  border-radius: 10px;
+}
+
+.containerFormListChar .form {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px 20px;
+}
+
+.headerInboxList {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 3px solid #BDBDBD;
+}
+
+.headerInboxList .btn {
+  width: 10%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.headerInboxList .title {
+  width: 100%;
+}
+
+.listChat {
+  display: flex;
+  flex-direction: column;
+}
+
+.listChatContainer {
+  width: 50%;
+}
+
+.listChatContainer .talgR {
+  font-weight: bold;
+}
+
+.listChatIcon {
+  width: 10%;
+  text-align: center;
+}
+
+.listChatMsg {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.listChatAdd {
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerTaskList {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.headerTaskList .dropdown {
+  left: 20%;
+}
+
+.headerTaskList button {
+  margin-bottom: 10px;
+}
+
+.dropdown .myTask {
+  padding: 16px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.containerTaskList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.containerTaskList .headers {
+  display: grid;
+  grid-template-columns: 40px 180px 80px 80px 40px 40px;
+}
+
+.containerTaskList .content {
+  display: grid;
+  grid-template-columns: 40px 320px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px 40px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 40px 320px;
+  padding: 10px 40px;
+}
+
+body {
+  font-family: "Lato", "Lato-Regular";
+  padding: 0px;
+  margin: 0px;
+  background-color: #828282;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  background-color: #4F4F4F;
+  padding: 10px;
+  color: #E9F3FF;
+}
+
+.dnone {
+  display: none !important;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #383838;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.input-group {
+  margin: 3% 0px;
+  display: flex;
+  align-content: stretch;
+}
+
+.input-group > input, select, .contentEditable {
+  flex: 1 0 auto;
+  margin: 0px;
+  width: 80%;
+}
+
+.input-group-addon {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 10px;
+  box-sizing: border-box;
+}
+
+input[type=date] {
+  padding: 12px 0px;
+  box-sizing: border-box;
+  min-width: 200px;
+}
+
+.button {
+  background-color: #2F80ED; /* Green */
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.dflex {
+  display: flex;
+}
+
+.mauto {
+  margin: auto;
+}
+
+.icons {
+  width: 18px;
+  height: 32px;
+}
+
+.ficons {
+  font-size: 20px;
+}
+
+.bprimary {
+  background-color: #2F80ED;
+  color: white;
+  border: none;
+}
+
+.bdark {
+  background-color: #E0E0E0;
+  color: black;
+  border: none;
+}
+
+.white {
+  color: #E9F3FF;
+}
+
+.purple {
+  color: #8885FF;
+}
+
+.bpurple {
+  background-color: #8885FF;
+}
+
+.yellow {
+  color: #F8B76B;
+}
+
+.primary {
+  color: #2F80ED !important;
+}
+
+.red {
+  color: #EB5757 !important;
+}
+
+.menuDark {
+  color: #4F4F4F;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+}
+
+.talgR {
+  text-align: end;
+}
+
+.talgL {
+  text-align: start;
+}
+
+.talgC {
+  text-align: center;
+}
+
+.flexR {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexC {
+  display: flex;
+  flex-direction: column;
+}
+
+.bindicator1 {
+  background-color: #F8B76B;
+}
+
+.cindicator1 {
+  color: #E5A443;
+}
+
+.bindicator2 {
+  background-color: #8785FF;
+}
+
+.cindicator2 {
+  color: #9B51E0;
+}
+
+.bindicator3 {
+  background-color: #EB5757;
+}
+
+.cindicator3 {
+  color: #ff2020;
+}
+
+.bindicator4 {
+  background-color: #F2C94C;
+}
+
+.cindicator4 {
+  color: #ffc71e;
+}
+
+.yourSend {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+}
+
+.mt4px {
+  margin-top: 4px;
+}
+
+.m2p {
+  margin: 2%;
+}
+
+.w40p {
+  width: 80%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid gray;
+}
+
+.itemCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hw20px {
+  height: 20px;
+  width: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.iconPosTop5 {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+
+.iconPosBottom5 {
+  position: relative;
+  bottom: 5px;
+  margin-left: 5px;
+}
+
+.tdel {
+  text-decoration: line-through;
+}
+
+.right10 {
+  right: 10px;
+}
+
+/*# sourceMappingURL=output.css.map */
